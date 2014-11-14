@@ -48,12 +48,7 @@
         {% if pages %}
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
-              <!-- Categories -->
-              <li><a href="/tag/evernote" class="{{ set_active('/tag/design') }}">Evernote</a></li>
-              <li><a href="/tag/music" class="{{ set_active('/tag/web') }}">Music</a></li>
-              <li><a href="/tag/iti" class="{{ set_active('/tag/ios') }}">ITI</a></li>
-              <!-- END Categories -->
-
+          
             {% for page in pages %}
             <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
             {% endfor %}
