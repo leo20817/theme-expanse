@@ -49,6 +49,13 @@
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
           
+          <!-- Categories -->
+    <li><a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a></li>
+    <li><a href="/tag/web" class="{{ set_active('/tag/web') }}">Web</a></li>
+    <li><a href="/tag/ios" class="{{ set_active('/tag/ios') }}">iOS</a></li>
+    <li><a href="/tag/android" class="{{ set_active('/tag/android') }}">Android</a></li>
+    <!-- END Categories -->
+    
             {% for page in pages %}
             <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
             {% endfor %}
