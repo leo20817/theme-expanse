@@ -44,7 +44,7 @@
       <div class="overlay"></div>
       <img src="{{ assets('images/rainbow-bg.png') }}" class="rainbow" />
       <div class="container wide">
-        <h1><a href="{{ site.base_url }}">Leo</a></h1>
+        <h1><a href="{{ site.base_url }}">MURMURING</a></h1>
         {% if pages %}
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
@@ -52,7 +52,10 @@
 <div class="nav-collapse collapse">
   <ul class="nav pull-right">
     <li><a href="/">Blog</a></li>
-    
+     <ul>
+          <li><a herf="tw.linkedin.com/in/leocheng1/"
+          title="LinkedIn">LinkedIn</a></li></ul>
+          
     {% if pages %}
       {% for page in pages %}
         <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
@@ -67,13 +70,8 @@
         </ul>
         {% endif %}
       </div>
-    <nav class="pull-left">
-        <ul>
-          <li><a herf="tw.linkedin.com/in/leocheng1/"
-          title="LinkedIn">LinkedIn</a></li>
-        </ul>
-      </nav>
       
+       
     </header>
 
     <div class="container content">
