@@ -44,9 +44,11 @@
       <div class="overlay"></div>
       <img src="{{ assets('images/rainbow-bg.png') }}" class="rainbow" />
       <div class="container wide">
+        <hgroup>
         <h1><a href="{{ site.base_url }}">MURMURING</a></h1>
+        <h2>Evernote skills</h2>
         {% if pages %}
-        
+        </hgroup>
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
       
@@ -69,14 +71,6 @@
         </ul>
         {% endif %}
       </div>
-        
-        <!-- Categories -->
-        <ul class="nav pull-left">
-          <li><h2><a href="/tag/evernote" class="{{ set_active('/tag/evernote') }}">Evernote</a></h2></li>
-          <li><a href="/tag/music" class="{{ set_active('/tag/music') }}">Music</a></li>
-          <li><a href="/tag/iti" class="{{ set_active('/tag/iti') }}">ITI</a></li>
-        </ul>
-      <!-- END Categories -->
        
     </header>
 
