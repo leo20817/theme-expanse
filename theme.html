@@ -10,11 +10,6 @@
       {% endif %}
       | {{ site.name }}
     </title>
-     <!-- Categories -->
-        <li><a href="/tag/evernote" class="{{ set_active('/tag/Evernote') }}">Evernote</a></li>
-        <li><a href="/tag/music" class="{{ set_active('/tag/Music') }}">Music</a></li>
-        <li><a href="/tag/iti" class="{{ set_active('/tag/ITI') }}">ITI</a></li>
-        <!-- END Categories -->
 
     {{ header_meta }}
 
@@ -51,7 +46,11 @@
       <div class="container wide">
         <h1><a href="{{ site.base_url }}">MURMURING</a></h1>
         {% if pages %}
-        
+        <!-- Categories -->
+        <li><a href="/tag/evernote" class="{{ set_active('/tag/Evernote') }}">Evernote</a></li>
+        <li><a href="/tag/music" class="{{ set_active('/tag/Music') }}">Music</a></li>
+        <li><a href="/tag/iti" class="{{ set_active('/tag/ITI') }}">ITI</a></li>
+        <!-- END Categories -->
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
       
