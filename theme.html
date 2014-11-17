@@ -38,6 +38,12 @@
 
     {% else %}
     <header{% if is_post %} class="short"{% endif %}>
+      <nav>
+        <ul>
+          <li><a herf="http://murmuring.postach.io"
+          title="Home">Home</a></li>
+        </ul>
+      </nav>
       <div class="bg"></div>
       <div class="spinner"></div>
       <div class="shadow top"></div>
@@ -52,12 +58,6 @@
 <div class="nav-collapse collapse">
   <ul class="nav pull-right">
     <li><a href="/">Blog</a></li>
-    
-    <!-- Categories -->
-    <li><a href="/tag/evernote" class="{{ set_active('/tag/evernote') }}">Evernote</a></li>
-    <li><a href="/tag/music" class="{{ set_active('/tag/music') }}">Music</a></li>
-    <li><a href="/tag/iti" class="{{ set_active('/tag/iti') }}">ITI</a></li>
-    <!-- END Categories -->
     
     {% if pages %}
       {% for page in pages %}
